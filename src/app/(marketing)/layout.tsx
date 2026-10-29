@@ -1,0 +1,20 @@
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { LanguagePrompt } from '@/components/layout/language-prompt'
+
+export default function MarketingLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <>
+      <Header />
+      <main id="main-content" className="flex-1">
+        {children}
+      </main>
+      <Footer />
+      <LanguagePrompt />
+    </>
+  )
+}
